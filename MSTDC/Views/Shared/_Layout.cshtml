@@ -12,80 +12,91 @@
     @*<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">*@
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/main.css" rel="stylesheet" />
-   
 </head>
 
 <body>
-                    <nav>
-                        <ul>
-                       
-                            <li class="liaction"@*style="font-size:7px;font-family:Arial, Helvetica, sans-serif"*@>@*<a  class="logo" style="padding:0;font-size:30px" href="#" >*@ 
-                            @Html.ActionLink("MSTDC", "Index","Home", new { @class = "logo"})@*<strong>MSTDC</strong>*@@*</a>*@</li>
-                          
-                            <li>@*<a style="padding:0" href="#">Things To Do</a>*@
-                            @Html.ActionLink("Things To Do","Index","Home", new { @class = "liaction" })
-                            </li>
-                          
-                            <li class="liaction">
-                                @*<a style="padding:0" href="#"> *@
-                                @Html.ActionLink("Where To Go", "Index", "Home")@*Where To Go*@@*</a>*@
-                            </li>
-                          
-                            <li class="liaction">
-                                @*<a style="padding:0" href="#banner1">*@
-                                @Html.ActionLink("Experience Maharashtra", "Index", "Home",new {htmlAttributes= new { id = "banner1" }})
-                                                    </li>
-                          
-                            <li class="liaction">
-                                @*<a style="padding:0" href="#">*@
-                                @Html.ActionLink("Where To Stay", "Index", "Home")@*Where To Stay*@@*</a>*@
-                                                    </li>
-                          
-                            <li class="liaction">
-                                @*<a  style="padding:0" href="nextpage1.html">*@
-                                @Html.ActionLink("Register", "LoginSignup", "Home")@*Register*@@*</a>*@
-                            </li>
-                        </ul>
-
-
-                    </nav>
-              
-    <!--end of nav-->
-    <!--start of banner-->
-    <!--end of banner-->
-    <!----skills section------>
-    <!----end skills section------>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("MSTDC", "Index", "Home", new { @class = " navbar-brand" })
             </div>
-        </div>*@
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("Things To Do", "Index", "Home", null, new { @class = "" })</li>
+                    <li>@Html.ActionLink("Where To Go", "Index", "Home", null, new { @class = "" })</li>
+                    <li>@Html.ActionLink("Experience Maharashtra", "Index", "Home", new { htmlAttributes = new { id = "banner1" } })</li>
+                    <li>@Html.ActionLink("Where To Stay", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Register", "LoginSignup", "Home")</li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter City, Place or Hotel">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Wallet</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    
+       
+
+<!--end of nav-->
+<!--start of banner-->
+<!--end of banner-->
+<!----skills section------>
+<!----end skills section------>
+@*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
 
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - MSTDC</p>
-        </footer>
-    </div>
+<div class="">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - MSTDC</p>
+    </footer>
+</div>
 
-    @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")*@
-    @RenderSection("scripts", required: false)
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
 </body>
 </html>
