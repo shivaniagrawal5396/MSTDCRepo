@@ -11,7 +11,7 @@ namespace MSTDC.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        [DataType(DataType.EmailAddress)]
+        //[DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]

@@ -25,12 +25,12 @@ namespace MSTDC.Controllers
             bool status = dal.ValidateUser(data);
             if (status)
             {
-                return RedirectToAction("About");
+                TempData["Email"] = data.Email;
+                return RedirectToAction("Index","Home");
             }
-            else
-            {
+            
                 return View();
-            }
+            
         }
     }
 }

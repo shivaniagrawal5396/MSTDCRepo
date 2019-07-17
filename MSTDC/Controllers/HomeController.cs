@@ -11,6 +11,14 @@ namespace MSTDC.Controllers
     {
         public ActionResult Index()
         {
+            
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Index(string temp)
+        {
+            //ViewBag.Email = TempData["Email"].ToString();
+           
             return View();
         }
 

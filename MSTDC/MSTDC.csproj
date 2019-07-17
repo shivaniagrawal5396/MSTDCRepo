@@ -129,7 +129,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -138,10 +137,41 @@
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Content\footer1.css" />
+    <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\10.jpg" />
+    <Content Include="Content\Images\11.jpg" />
+    <Content Include="Content\Images\12.jfif" />
+    <Content Include="Content\Images\13.jpg" />
+    <Content Include="Content\Images\14.jpg" />
+    <Content Include="Content\Images\15.jpg" />
+    <Content Include="Content\Images\16.jpg" />
+    <Content Include="Content\Images\18.jpg" />
+    <Content Include="Content\Images\19.jpg" />
+    <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\3.jpg" />
+    <Content Include="Content\Images\4.jpg" />
+    <Content Include="Content\Images\5.jpg" />
+    <Content Include="Content\Images\dagduseth.jpg" />
+    <Content Include="Content\Images\Dapoli_Banner.jpg" />
+    <Content Include="Content\Images\gateway-of-india-mumbai_hz4hop.jpg" />
+    <Content Include="Content\Images\h1.jpg" />
+    <Content Include="Content\Images\h2.jpg" />
+    <Content Include="Content\Images\h3.jpg" />
+    <Content Include="Content\Images\h4.jpg" />
+    <Content Include="Content\Images\h5.jpg" />
+    <Content Include="Content\Images\h6.jpg" />
+    <Content Include="Content\Images\imagica.jfif" />
+    <Content Include="Content\Images\lavasa.jpg" />
+    <Content Include="Content\Images\loginbg.jpg" />
+    <Content Include="Content\Images\PATALESHWAR.jpg" />
+    <Content Include="Content\Images\rajiv-gandhi-sea-link-166867-1920-cropped-1553845078.jpg" />
+    <Content Include="Content\Images\SHANIWAR-WADA.jpg" />
     <Content Include="Content\Images\Slide1.png" />
     <Content Include="Content\Images\Slide2.jpg" />
     <Content Include="Content\Images\Slide3.jpg" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
@@ -244,6 +274,8 @@
     <Content Include="Views\Login\LoginC.cshtml" />
     <Content Include="Views\Home\LoginSignup.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\SignUp\SignUpC.cshtml" />
+    <Content Include="Views\Login\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

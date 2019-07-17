@@ -1,0 +1,115 @@
+header {
+		
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+}
+
+ul {
+	float: left;
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li a { 
+
+    font-size: 16px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+}
+ul li a:hover {
+  	background: transparent;
+  	color: black;
+   transition: 0.9s ease;
+}
+
+.main{
+	max-width: 1500px;
+	margin: auto;
+}
+
+.navlog {
+	float: left;
+	color: black;
+    font-weight:bold;
+	font-size: inherit;
+	padding-left:30px;
+    
+}
+	
+.navlog:hover {
+	background: transparent;
+  	color: black;
+  	text-decoration: none;
+   	transition: 0.9s ease;}
+
+.slide1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slide2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h2.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide3 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h3.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide4 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h4.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide5 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h5.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide6 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-image: url('Images/h6.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption h1 {
+    font-size: 5.15em;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 3.5em;
+}
+
+.carousel-caption p {
+    font-size: 2em;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+

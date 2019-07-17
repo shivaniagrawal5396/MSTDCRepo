@@ -20,11 +20,20 @@ namespace MSTDC.Controllers
         public ActionResult SignupC(Models.Signup newuser)
         {
             BAL.Signup s = new BAL.Signup();
-            s.Email = newuser.Email;
             s.Name = newuser.Name;
+            s.Email = newuser.Email;
+            s.Password = newuser.Password;
+            s.Gender = newuser.Gender;
+            s.DOB = newuser.DOB;
             DAL.LoginDAL dal = new LoginDAL();
-            bool ans = dal.SignUp(s);
+            bool status = dal.SignUp(s);
+            if (status)
+            {
+                return RedirectToAction("LoginC", "Login");
+            }
+
             return View();
+            
         }
     }
 }

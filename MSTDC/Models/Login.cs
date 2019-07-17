@@ -9,7 +9,7 @@ namespace MSTDC.Models
     public class Login
     {
         [Required]
-        [DataType(DataType.EmailAddress)]
+        //[DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
         [Required]

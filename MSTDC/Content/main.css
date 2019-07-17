@@ -1,324 +1,262 @@
-﻿/*black #191716*/
-/*white #e0e2db*/
-/*yellow #e6af2e*/
-/*gray #beb7a4*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body
+{
+	font-family: 'Roboto', sans-serif;
 }
 
-/*body {
-    padding-top:0px;
-    margin:0px;
-    font-family: 'Roboto', sans-serif;*/
-/*}*/
-/*nav*/
-/*nav ul {
-    list-style-type: none;
-    border-top: 6px solid #e6af2e;
-    background-color: green;
-    
-}*/
-
-.liaction {
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    font-size: 25px;
-    padding: 15px 25px;
-    color: #e6af2e;
+.main{
+	max-width: 1500px;
+	margin: auto;
 }
-.slide1 {
-    background-image: url('Images/Slide1.png');
-    height: 500px;
-    background-repeat: no-repeat;
+
+ul {
+	float: left;
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+ul li {
+	display: inline;
+}
+
+ul a { 
+    font-size: 16px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #337ab7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+}
+
+
+ul li a:hover {
+	background: transparent;
+  	color: black;
+   	transition: 0.9s ease;
+}
+.navlog ul {
+	display: inline;
+	float: left;
+	color: #337ab7;
+	font-size: inherit;
+	padding-top: -3px;
+    padding-left: 120px;
+}
+
+.navlog:hover {
+	background: transparent;
+  	color: black;
+  	text-decoration: none;
+   	transition: 0.9s ease;}
+/*##############banner######################*/
+#banner {
+    min-height: 150vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-image: url('Images/loginbg.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-
-.slide2 {
-    background-image: url('Images/Slide2.jpg');
-    height: 500px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide3 {
-    background-image: url('Images/Slide3.jpg');
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.carousel-caption h1 {
-    font-size: 5.4em;
-    font-family: 'Pacifico', cursive;
-    padding-bottom: .4em;
-}
-
-.carousel-caption p {
-    font-size: 2em;
-}
-        nav ul li a:hover {
-            color: white;
-        }
-
-.logo {
-    padding-top:10px;
     display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 30px;
-    background: transparent;
-    font-style: italic;
+    align-items: center;
+}
+.banner-text{
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #e0e2db;
+	font-family: 'Dancing Script', cursive;
+
+}
+.banner-underline{
+	width: 200px;
+	border: 3px solid #191176;
+	margin: 10px auto 20px auto;
+
+}
+.banner-btn{
+	display: flex;
+	justify-content: space-between;
+
+}
+.banner-btn button{
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 15px;
+	text-transform: uppercase;
+	margin: 0 10px;
+	background: transparent;
+	color: green;
+	border:3px solid #e6af2e;
+}
+.banner-btn button:hover{
+
+	color: #e0e2db;
+	background: green;
+}
+#login-banner {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-image: url('Images/loginbg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signup-banner {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url('Images/loginbg.jpg');
+    background-attachment: fixed;
+    background-position: all;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box{
+	 width: 320px;
+	 height: 400px;
+	 background: rgba(0, 0, 0, 0.5);
+	 color: #fff;
+	 top: 60%;
+	 left: 50%;
+	 position: absolute;
+	 transform: translate(-50%,-50%);
+	 box-sizing: border-box;
+	 padding: 40px 35px;
+}
+.login-box1{
+	 width: 350px;
+	 height: 200px;
+	 background: rgba(0, 0, 0, 0.5);
+	 color: #fff;
+	 top: 60%;
+	 left: 50%;
+	 position: absolute;
+	 transform: translate(-50%,-50%);
+	 box-sizing: border-box;
+	 padding: 70px 30px;
 }
 
-    .logo:hover {
-        background-color: #e0e2db;
-        color: #e6af2e;
-    }
-
-@media screen and (min-width: 576px) {
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-    }
-
-        nav ul li {
-            flex: 1 0 auto;
-        }
-
-    .logo {
-        display: block;
-        text-align: center;
-    }
-
-        .logo.fa {
-            display: none;
-        }
-    /*##############banner######################*/
-    #banner {
-        min-height: 90vh;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../1.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .banner-text {
-        font-size: 50px;
-        text-transform: uppercase;
-        color: #e0e2db;
-        font-family: 'Dancing Script', cursive;
-    }
-
-    .banner-underline {
-        width: 200px;
-        border: 3px solid #191176;
-        margin: 10px auto 20px auto;
-    }
-
-    .banner-btn {
-        display: flex;
-        justify-content: space-between;
-    }
-
-        .banner-btn button {
-            font-size: 20px;
-            border-radius: 10px;
-            padding: 15px;
-            text-transform: uppercase;
-            margin: 0 10px;
-            background: transparent;
-            color: green;
-            border: 3px solid #e6af2e;
-        }
-
-            .banner-btn button:hover {
-                color: #e0e2db;
-                background: green;
-            }
-
-    #login-banner {
-        min-height: 90vh;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #signup-banner {
-        min-height: 90vh;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .login-box {
-        width: 320px;
-        height: 400px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        top: 60%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        box-sizing: border-box;
-        padding: 70px 30px;
-    }
-
-    .login-box1 {
-        width: 350px;
-        height: 200px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        top: 60%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        box-sizing: border-box;
-        padding: 70px 30px;
-    }
-
-    h1 {
-        padding: 0 0 20px;
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .login-box p {
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .login-box input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-        .login-box input[type="text"], input[type="password"] {
-            border: none;
-            border-bottom: 1px solid #fff;
-            background: transparent;
-            outline: none;
-            height: 40px;
-            color: #fff;
-            font-size: 16px;
-        }
-
-        .login-box input[type="submit"] {
-            border: none;
-            outline: none;
-            height: 40px;
-            background: #1c8adb;
-            color: #fff;
-            font-size: 18px;
-            border-radius: 20px;
-        }
-
-            .login-box input[type="submit"]:hover {
-                cursor: pointer;
-                background: #39dc79;
-                color: #000;
-            }
-
-    .login-box a {
-        text-decoration: none;
-        font-size: 14px;
-        color: #fff;
-    }
-
-    .signup-box {
-        width: 320px;
-        height: 750px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        top: 80%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        box-sizing: border-box;
-        padding: 70px 30px;
-    }
-
-        .signup-box p {
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .signup-box input {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-            .signup-box input[type="text"], input[type="password"] {
-                border: none;
-                border-bottom: 1px solid #fff;
-                background: transparent;
-                outline: none;
-                height: 40px;
-                color: #fff;
-                font-size: 16px;
-            }
-
-            .signup-box input[type="submit"] {
-                border: none;
-                outline: none;
-                height: 40px;
-                background: #1c8adb;
-                color: #fff;
-                font-size: 18px;
-                border-radius: 20px;
-            }
-
-                .signup-box input[type="submit"]:hover {
-                    cursor: pointer;
-                    background: #39dc79;
-                    color: #000;
-                }
-
-    .banner-text1 {
-        position: absolute;
-        top: 670px;
-        font-size: 30px;
-        text-transform: uppercase;
-        color: #e0e2db;
-        font-family: 'Dancing Script', cursive;
-    }
-
-    #banner1 {
-        min-height: 90vh;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../1.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+h1{
+	margin: o;
+	padding: 0 0 20px;
+	font-size: 20px;
+	text-align: center;
 }
-    
+.login-box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+.login-box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.login-box input[type="text"],input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+
+}
+.login-box input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;  
+	border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #337ab7;
+	color: black;
+}
+
+}
+.login-box a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #fff;
+}
+.signup-box{
+	 width: 420px;
+	 height: 750px;
+	 background: rgba(0, 0, 0, 0.5);
+	 color: #fff;
+	 top: 80%;
+	 left: 50%;
+	 position: absolute;
+	 transform: translate(-50%,-50%);
+	 box-sizing: border-box;
+	 padding: 40px 50px;
+}
+.signup-box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+.signup-box input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.signup-box input[type="text"],input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+}
+.signup-box input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;  
+	border-radius: 20px;
+}
+.signup-box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #337ab7;
+	color: black;
+}
+.banner-text1{
+	position: absolute;
+	top: 670px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #e0e2db;
+	font-family: 'Dancing Script', cursive;
+}
+#banner1 {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-image: url('Images/loginbg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
