@@ -120,15 +120,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\SignUpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Places.cs" />
     <Compile Include="Models\Signup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-css.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -139,20 +142,35 @@
     <Content Include="Content\font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="Content\footer1.css" />
     <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\1.png" />
     <Content Include="Content\Images\10.jpg" />
     <Content Include="Content\Images\11.jpg" />
     <Content Include="Content\Images\12.jfif" />
     <Content Include="Content\Images\13.jpg" />
     <Content Include="Content\Images\14.jpg" />
     <Content Include="Content\Images\15.jpg" />
+    <Content Include="Content\Images\1503474285_rotates_irctc_2386542182017081918.jpg" />
+    <Content Include="Content\Images\1517579553_Sinhagad-Fort3.jpg" />
     <Content Include="Content\Images\16.jpg" />
     <Content Include="Content\Images\18.jpg" />
     <Content Include="Content\Images\19.jpg" />
     <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\2198.jpg" />
+    <Content Include="Content\Images\23082017_Dagdushethalwaiganpatitemple_01.jpg" />
     <Content Include="Content\Images\3.jpg" />
+    <Content Include="Content\Images\336491590Pune_Aga_Khan_Palace_Main.jpg" />
+    <Content Include="Content\Images\338-parvati-temple-atop-of-the-parvati-hill.jpg" />
     <Content Include="Content\Images\4.jpg" />
     <Content Include="Content\Images\5.jpg" />
+    <Content Include="Content\Images\6f5e7ad68573083f790298309d492872.jpg" />
+    <Content Include="Content\Images\aga-khan-palace-pune-india-tourism-history.jpg" />
+    <Content Include="Content\Images\akp.jpg" />
+    <Content Include="Content\Images\asia-crowded-electric-train-2526935.jpg" />
+    <Content Include="Content\Images\attr_wiki_1163.jpg" />
+    <Content Include="Content\Images\beautiful-view-of-dagdusheth.jpg" />
+    <Content Include="Content\Images\dagadusheth-halwai-ganapati-temple-night-view.jpg" />
     <Content Include="Content\Images\dagduseth.jpg" />
+    <Content Include="Content\Images\Dagdusheth Ganpati.jpg" />
     <Content Include="Content\Images\Dapoli_Banner.jpg" />
     <Content Include="Content\Images\gateway-of-india-mumbai_hz4hop.jpg" />
     <Content Include="Content\Images\h1.jpg" />
@@ -162,15 +180,30 @@
     <Content Include="Content\Images\h5.jpg" />
     <Content Include="Content\Images\h6.jpg" />
     <Content Include="Content\Images\imagica.jfif" />
+    <Content Include="Content\Images\Kalyan_Darawaja_on_Sinhgad_Fort.jpg" />
     <Content Include="Content\Images\lavasa.jpg" />
     <Content Include="Content\Images\loginbg.jpg" />
+    <Content Include="Content\Images\ooty.jpg" />
+    <Content Include="Content\Images\p11.jpg" />
+    <Content Include="Content\Images\p2.jpg" />
+    <Content Include="Content\Images\p3.jpg" />
+    <Content Include="Content\Images\p4.jpg" />
+    <Content Include="Content\Images\p5.jpg" />
+    <Content Include="Content\Images\p6.jpg" />
+    <Content Include="Content\Images\parvati-hill-pune-india-sanjay-purohit.jpg" />
     <Content Include="Content\Images\PATALESHWAR.jpg" />
+    <Content Include="Content\Images\places-to-visit-in-pune-Aga-Khan-Palace.jpg" />
     <Content Include="Content\Images\rajiv-gandhi-sea-link-166867-1920-cropped-1553845078.jpg" />
+    <Content Include="Content\Images\sf.jpg" />
     <Content Include="Content\Images\SHANIWAR-WADA.jpg" />
     <Content Include="Content\Images\Slide1.png" />
     <Content Include="Content\Images\Slide2.jpg" />
     <Content Include="Content\Images\Slide3.jpg" />
+    <Content Include="Content\Images\sw.jpg" />
+    <Content Include="Content\Images\sw2.jpg" />
+    <Content Include="Content\Images\up parvati.JPG" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\pune.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
@@ -276,6 +309,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\SignUp\SignUpC.cshtml" />
     <Content Include="Views\Login\About.cshtml" />
+    <Content Include="Views\Places\Place.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

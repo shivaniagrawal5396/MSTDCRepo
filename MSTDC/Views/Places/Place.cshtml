@@ -1,0 +1,357 @@
+﻿@model MSTDC.Models.Places
+
+@{
+    ViewBag.Title = "Place";
+}
+
+@*<h2>Place</h2>*@
+
+<header>
+
+    <div class="">
+        <div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Upar ke naam
+
+                    <!-Define how many slides to put in the carousel -->
+            <ol class="carousel-indicators">
+                <li data-target="#theCarousel" data-slide-to="0" class="active"> </li>
+                <li data-target="#theCarousel" data-slide-to="1"> </li>
+                <li data-target="#theCarousel" data-slide-to="2"> </li>
+                <li data-target="#theCarousel" data-slide-to="3"> </li>
+                <li data-target="#theCarousel" data-slide-to="4"> </li>
+                <li data-target="#theCarousel" data-slide-to="5"> </li>
+            </ol>
+
+            <!-- Define the text to place over the image -->
+
+
+
+
+            <div class="carousel-inner">
+
+
+                <div class="item active">
+                    <div class="slide1"></div>
+                    <div class="carousel-caption">
+
+                        <h1>Pune</h1>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="slide2"></div>
+                    <div class="carousel-caption">
+                        <h1> Shaniwar Wada </h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide3"></div>
+                    <div class="carousel-caption">
+
+                        <h1>Rajgad Fort</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slide4"></div>
+                    <div class="carousel-caption">
+
+                        <h1>Sinhagad Fort</h1>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="slide5"></div>
+                    <div class="carousel-caption">
+
+                        <h1>Parvati Hills</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="slide6"></div>
+                    <div class="carousel-caption">
+
+                        <h1>Dagdusheth Temple</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Set the actions to take when the arrows are clicked -->
+            <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"> </span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+</header>
+
+<!--------------- Yaha pe HEADER khatam ho gya hai...---------->
+<!----------------Yaha se naya DIV shuru kar he hai jo corousel ke neeche aayega ------------->
+<div>
+    <div class="how-section1">
+        <div class="row">
+            <div class="col-md-6 how-img">
+                <img src="~/Content/Images/sf.jpg" class="square img-fluid" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h4>Shaniwar-Wada</h4>
+                <!--<h4 class="subheading"></h4> -->
+                <p class="text-muted">Shaniwar Wada served as the 
+                seat of power for Peshwa rulers of the Maratha Empire. 
+                This magnificent architectural marvel was an extravagant
+                fortification effort made by Peshwa Baji Rao I following
+                the victory in the Third Anglo Maratha War. The 
+                fort was destroyed in 1823 by a fire, since then it has 
+                functioned as a tourist attraction comprising of grand
+                armoured gates, massive palaces and a beautiful fountain.  </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <h4>SINGHGAD FORT</h4>
+                <!--<h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4> -->
+                <p class="text-muted">Located around 30 kilometres away from Pune, 
+                the Sinhagad fort serves as an excellent destination for trekking
+                due to its significant location on the Bhuleshwar Range of the 
+                Sahyadri Mountains. Not only can you enjoy the cool climes of 
+                Pune but you can also experience how the fort could have once
+                acted as an active military outpost during the Maratha Empire. 
+                Previously known as Kondhana, the fort had been the site of many 
+                battles, most notably the Battle of Sinhagad in 1670. 
+                There are two gates to enter the fort, the
+                Kalyan Darwaza and Pune Darwaza .  </p>
+            </div>
+            <div class="col-md-6 how-img">
+                <img src="~/Content/Images/sf.jpg" class="square img-fluid" alt="" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 how-img">
+                <img src="~/Content/Images/akp.jpg" class="square img-fluid" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h4>AGA KHAN PALACE</h4>
+                <!--  <h4 class="subheading">With GetLance, you have the freedom and flexibility to control when, where, and how you work. Each project includes an online workspace shared by you and your client, allowing you to:</h4> -->
+                <p class="text-muted">The Aga Khan Palace is a testament to the architectural wonders of a bygone era. Considered as one of the largest landmarks in Indian history, The Aga Khan Palace is a spectacular building that was built in 1892. Its other claim to fame is that is served as a prison for Mahatma Gandhi and other noted freedom fighters during the Indian Freedom movement.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>PATELESWAR</h4>
+                <!--  <h4 class="subheading">AGA KHAN PALACE</h4> -->
+                <p class="text-muted">Pataleshwar has been declared as a protected monument by the government. This 8th century rock-cut temple built during the Rashtrakuta dynasty is dedicated to Lord Shiva. There’s a Linga situated within the inner sanctum flanked by two smaller cells on either side. In front of the cave is the Nandi Mandapa which is the most peculiar feature of the architecture at Pataleshwar.</p>
+            </div>
+            <div class="col-md-6 how-img">
+                <img src="~/Content/Images/14.jpg" class="square img-fluid" alt="" />
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!----------------Yaha se naya DIV shuru kar he hai jo corousel ke neeche aayega ------------->
+
+
+<style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main1 {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+            /*.content:hover {
+      background-color: rgba(0,0,0,0.3);
+      -webkit-transition:all 0.9s ease-in-out;
+    transition:all .4s ease-in-out;
+      color: black;
+    }*/
+
+
+            .content:hover .img {
+                opacity: 0.3;
+                transition: 0.9s ease;
+            }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+</style>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+
+
+    <div class="main1">
+
+        <hr>
+        <hr>
+        <hr>
+        <center>
+            <h1 style="text-align: center;"> <b> Popular Hotels </b></h1>
+
+            <p> <b> "Whether you're visiting as a family, with friends, or with your special someone,
+                     <br />Maharashtra has something magical in store for you." </b></p>
+        </center>
+
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column nature">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\14.jpg" alt="Mountains" style="width:100%">
+                    <h4><center> <strong> PUNE </strong></center></h4>
+                </div>
+
+
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\15.jpg" alt="Lights" style="width:100%">
+                    <h4><center><strong> MUMBAI </strong></center></h4>
+
+                </div>
+            </div>
+
+            <div class="column nature">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\14.jpg" alt="Nature" style="width:100%">
+                    <h4><center><strong> LONAVALA </strong></center></h4>
+
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\15.jpg" alt="Car" style="width:100%">
+                    <h4><center><strong> MAHABALESHWAR </strong></center></h4>
+
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\14.jpg" alt="Car" style="width:100%">
+                    <h4><center><strong> NASHIK </strong></center></h4>
+
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img class="img" src="C:\Users\TRG.PLATOW42S2351\Desktop\pune\15.jpg" alt="Car" style="width:100%">
+                    <h4><center><strong> SHIRDI </center></strong></h4>
+
+                </div>
+            </div>
+
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+    </script>
+
+
+
